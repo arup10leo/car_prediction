@@ -85,4 +85,4 @@ if st.button('Predict Price'):
                      cylinder, enginesize, fuel, boreratio, stroke, compressionratio, horsepower, rpm, citympg, highwaympg, vol, brand])
 
     query = query.reshape(1, 20)
-    st.title(np.exp(pipe.predict(query)))
+    st.title("Rs."+str(np.exp(pipe.predict(query))))
